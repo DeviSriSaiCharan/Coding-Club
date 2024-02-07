@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HashBii..</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="search.css".css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="leftContainer">
+            <div class="navbar">
+                <h1><span>N</span>C<p style="font-size: 1rem;">Nerd<span style="color: rgb(13, 174, 237)">Connect</span></p></h1>
+                <div class="menu">
+                    <a href="form.html">+ Create Contact </a>
+                    <a href="index.html"><i class="ri-contacts-line"></i>  Contacts</a>
+                    <a href="search.html" style="background-color : rgb(13, 174, 237) ; border-radius : 10px ; color : white" onclick="renderList()"><i class="ri-menu-search-line"></i>  Search</a>
+                    <!-- <a href="settings.html"><i class="ri-settings-line"></i>  Settings</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="rightContainer">
+            <div class="search-bar">
+                <!-- <form>
+                <input list="browsers" placeholder="Search Name"/>
+                <datalist id="browsers">
+                    <option value="Internet Explorer" />
+                    <option value="Firefox" />
+                    <option value="Opera" />
+                    <option value="Safari" />
+                    <option value="Chrome" />
+                </datalist>
+                </form> -->
+                <h3>Name</h3>
+                <img src="" alt="">
+            </div>
+            <div class="recentContacts">
+                <h2>Recent Contacts</h2>
+                <div>
+                    <div class="recent">
+                        <p>Name</p>
+                        <p>Phone</p>
+                        <hr>
+                        <button>Call</button>
+                    </div>
+                    <div class="recent">
+                        <p>Name</p>
+                        <p>Phone</p>
+                        <hr>
+                        <button>Call</button>
+                    </div>
+                    <div class="recent">
+                        <p>Name</p>
+                        <p>Phone</p>
+                        <hr>
+                        <button>Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="searchContainer">
+                <h3>Search</h3>
+                <!-- <input type="text" placeholder="Name">
+                <div class="details">
+                    <div class="image">
+                        <div>C</div>
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <p id="name">Name : Charan</p>
+                        <p>Phone number : 123456789</p>
+                        <p>Email : abcd@gmail.com</p>
+                    </div>
+                </div> -->
+                <form>
+                    <input list="browsers" id="search" placeholder="Search Name" oninput="searchContact(event)" />
+                    <datalist id="browsers">
+                        <!-- <option value="Internet Explorer" />
+                        <option value="Firefox" />
+                        <option value="Opera" />
+                        <option value="Safari" />
+                        <option value="Chrome" /> -->
+                    </datalist>
+                </form>
+                <div  class="details"  style="overflow-y: scroll;">
+                    <!-- <div>
+                        <div class="image">
+                            <div>C</div>
+                        </div>
+                        <hr>
+                        <div class="content">
+                            <p id="name">Name : Charan</p>
+                            <p>Phone number : 123456789</p>
+                            <p>Email : abcd@gmail.com</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

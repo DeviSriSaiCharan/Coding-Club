@@ -1,0 +1,221 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Honk&family=Poppins&display=swap'); */
+
+*{
+    font-family: 'Honk', system-ui;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    button:hover{
+        box-shadow: 5px 5px 5px solid black;
+    }
+
+    i{
+        margin-right: 10px;
+    }
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+
+.leftContainer{
+    width: 20%;
+    /* background-color: red; */
+}
+
+.rightContainer{
+    width: 80%;
+    /* background-color: blue; */
+}
+.navbar{
+
+    height: 100%;
+    /* background-color: pink; */
+    padding: 20px;
+    border-right: 1px solid rgba(92, 90, 90, 0.202);
+}
+
+.navbar h1{
+    font-size: 3rem;
+    margin: 20px 0px 40px 0px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a{
+    text-decoration: none;
+    border: 0px;
+    margin: 10px 0px;
+    height: 30px;
+    width: 75%;
+    color: rgb(81, 80, 80);
+    background-color: white;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: rgb(13, 174, 237);
+    font-weight: 500;
+}
+
+.icon{
+    margin: 0px 20px;
+}
+
+h1 span{
+    color: rgb(13, 174, 237);
+}
+
+/* ----------------Navbar Completed-------------- */
+
+.search-bar{
+    /* background-color: red; */
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+form{
+    margin: 0px 20px;
+    width: 30%;
+}
+
+input{
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(163, 160, 160, 0.233);
+    width: 100%;
+    height: 22px;
+    padding: 0px 10px;
+}
+
+/* --------------completed searchbar------------ */
+
+.recentContacts{
+    margin: 10px 0px;
+    /* background-color: red; */
+    padding: 10px 20px;
+    h2{
+        margin-left: 6px;
+        font-size: 1.3rem;
+    }
+}
+.recentContacts div{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    
+    /* background-color: red; */
+    gap: 10px;
+    padding: 10px 10px;
+}
+
+.recent{
+    /* background-color: blue; */
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(122, 120, 120, 0.155);
+    border-radius: 10px;
+    background-color: rgba(69, 189, 237, 0.124);
+    p{
+        font-size: 1rem;
+        margin: 5px 20px;
+    }
+    button{
+        width: 90%;
+        /* background-color: rgb(77, 249, 77); */
+        background-color: rgb(13, 174, 237);
+        color: white;
+        border: 0px;
+        align-self: center;
+        height: 25px;
+        border-radius: 10px;
+    }
+}
+
+.recent:hover{
+    background-color: white;
+}
+
+/* ------------Recent Call Completed-------------------- */
+
+.contactTable{
+    /* background-color: red; */
+    height: 56.7%;
+    padding: 10px 22px;
+     h2{
+        font-size: 1.3rem;
+     }
+     .list{
+        /* background-color: blue; */
+        height: 94%;
+        overflow-y: scroll;
+        .contact{
+            padding: 0px 10px;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            align-items: center;
+            font-size: 0.8rem;
+            .btns{
+                width: 10%;
+                /* background-color: red; */
+                display: flex;
+                gap: 5px;
+                height: 90%;
+                
+                button{
+                    background-color: white;
+                    border-radius: 20px;
+                    border: 0px;
+                    color: rgb(13, 174, 237);
+                    width: 50%;
+                    height: 100%;
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    /* background-color: rgb(13, 174, 237); */
+                }
+
+                button:hover {
+                    color: rgb(5, 144, 199);
+                    ;
+                    border: 0.5px solid rgb(13, 174, 237);
+                  }
+            }
+        }
+
+        .contact:hover{
+            background-color: rgba(179, 220, 237, 0.173);
+            border-radius: 10px;
+        }
+     }
+}
+
+button:hover {
+    background-color: rgb(5, 144, 199);
+  }

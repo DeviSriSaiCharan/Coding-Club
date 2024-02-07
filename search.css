@@ -1,0 +1,51 @@
+
+
+.searchContainer{
+    
+    padding: 20px;
+    /* background-color: red; */
+    height: 56.7%;
+    input{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    
+        .details{
+            /* background-color: red; */
+            height: 85%;
+            width: 100%;
+            div{
+                display: flex;
+                /* background-color: blue; */
+                height: 100%;
+                justify-content: space-between;
+                .image{
+                    height: 50%;
+                    div{
+                       
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 6rem;
+                        background-color: rgb(13, 127, 237);
+                        height: 96%;
+                        border-radius: 50%;
+                        width: 150px;
+                        color: black;
+                    }
+                }
+
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    background-color:rgba(179, 220, 237, 0.173);
+                    border-radius: 10px;
+                    width: 80%;
+                    padding: 20px;
+                    p{
+                        margin: 20px 0px;
+                    }
+                }
+            }
+        }
+    }
